@@ -5,13 +5,16 @@
   "main": "src/js/bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel watch src/bundle.js --out-dir js"
+    "dev": "parcel watch src/bundle.js --out-dir js",
+    "clean": "rimraf js",
+    "build": "npm run clean && parcel build src/bundle.js --out-dir js"
   },
   "keywords": [],
   "author": "Nick Boon",
   "license": "ISC",
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "rimraf": "^3.0.2"
   },
   "dependencies": {
     "about": "^2.0.1",
