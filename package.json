@@ -2,11 +2,19 @@
   "name": "non-spa-with-parcel",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/js/bundle.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel watch src/*.html --out-dir ."
   },
   "keywords": [],
   "author": "Nick Boon",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "about": "^2.0.1",
+    "index": "^0.4.0"
+  }
 }
